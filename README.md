@@ -1,8 +1,13 @@
 Karel00
 ======
 
-Starter code for the Karel Lab00 project
+Karel starter code and resources for the Lab00 assignment.
 
-Directions are found in fcpsKarel.doc (available at https://github.com/ASLJava/Karel).  
+Instructions:
+* Use the FORK button to create a copy of this code under your personal Github account
+* Clone that copy from your personal Github account onto your computer
+* Follow the instructions for Lab00 in the document "fcpsKarel.doc"
+* Once you have finished working, commit your changes to your computer
+* Push the code from your local computer up to your personal Github account
+* Initiate a "Pull Request" from your completed project.  This will let me know that you are ready for me to evaluate your work.
 
-In order for the code to run correctly, you must also modify your development environment (jGrasp, Eclipse, etc.) so that it knows the location of the Java archives "karel2_c.jar" and "xercesImpl.jar".  This is done by modifying your CLASSPATH variable and is discussed in the file 
