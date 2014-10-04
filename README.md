@@ -1,4 +1,4 @@
 Karel1
 ======
 
-Code for completing Karel Lab 1
+Starter code for the Karel Lab 1 project
