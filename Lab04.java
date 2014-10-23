@@ -9,7 +9,7 @@
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
-public class Lab00 {
+public class Lab04 {
 
      public static void main(String[] args) {
              Display.openWorld("maps/first.map");
