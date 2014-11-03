@@ -9,7 +9,7 @@
 import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
-public class Lab04 {
+public class Lab05 {
 
      public static void main(String[] args) {
           // TODO Your code goes here
