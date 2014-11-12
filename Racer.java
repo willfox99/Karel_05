@@ -14,11 +14,23 @@ public class Racer extends Athlete {
 	}
 	
 	public void jumpRight() {
-		// Pseudocode: tL, m, tR, m, tR, m, tL
+		turnLeft();
+		move();
+		turnRight();
+		move();
+		turnRight();
+		move();
+		turnLeft();
 	}
 	
 	public void jumpLeft() {
-		
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		turnLeft();
+		move();
+		turnRight();
 	}
 	
 	public void sprint(int n) {
@@ -28,11 +40,15 @@ public class Racer extends Athlete {
 	}
 	
 	public void put(int n) {
-		//TODO Place n beepers
+		for (int i = 0; i<n; i++) {
+			putBeeper();
+		}
 	}
 	
 	public void pick(int n) {
-		//TODO Pick up n beepers
+		for (int i = 0; i<n; i++){
+			pickBeeper();
+		}
 	}
 	
 	/**
@@ -44,7 +60,16 @@ public class Racer extends Athlete {
 	 * @param beepers
 	 */
 	public void shuttle(int spaces, int beepers) {
-		//TODO Perform a complete shuttle sequence
+		move();
+		jumpRight();
+		sprint(spaces-2);
+		pick(beepers);
+		turnAround();
+		sprint(spaces-2);
+		jumpLeft();
+		move();
+		put(beepers);
+		turnAround();
 	}
 
 }

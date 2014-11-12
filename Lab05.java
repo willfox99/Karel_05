@@ -11,12 +11,21 @@ import edu.fcps.karel2.Robot;
 
 public class Lab05 {
 	
-	//TODO define a class method, runTheRace, that will accept a Racer as argument
-	//TODO implement the runTheRace method so that it shuttles the Racer as needed
+	public static void runTheRace(Racer r) {
+		r.shuttle(4, 7);
+		r.shuttle(6, 5);
+		r.shuttle(8, 3);
+		r.move();
+	}
 
      public static void main(String[] args) {
           Display.openWorld("maps/shuttle.map");
           Display.setSize(10, 10);
-          //TODO Construct three Racers and pass each to "runTheRace", in sequence
+          Racer abby = new Racer(1);
+          Racer bobby = new Racer(4);
+          Racer carol = new Racer(7);
+          runTheRace(abby);
+          runTheRace(bobby);
+          runTheRace(carol);
      }
 }
