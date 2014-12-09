@@ -1,22 +1,29 @@
-/**
-*
-* Description of the program goes here  // provide a brief description
-*
-* @author <Your Name here>  // replace <...> with your name
-* @version <date/of/completion> // replace <...> with the date
-*/
-
-import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
+import edu.fcps.karel2.Display;
 
 public class Lab05 {
-	
-	//TODO define a class method, runTheRace, that will accept a Racer as argument
-	//TODO implement the runTheRace method so that it shuttles the Racer as needed
 
-     public static void main(String[] args) {
-          Display.openWorld("maps/shuttle.map");
-          Display.setSize(10, 10);
-          //TODO Construct three Racers and pass each to "runTheRace", in sequence
+public static void runTheRace(Racer arg) {
+         arg.shuttle(4, 7);
+         arg.shuttle(6, 5);
+         arg.shuttle(8, 3);
+         arg.move();
      }
-}
+          public static void main(String[] args) {   
+     
+            Display.openWorld("maps/shuttle.map");
+            Display.setSize(10, 10);
+            Display.setSpeed(10);
+            
+            Racer will = new Racer(7);
+            Racer david = new Racer (4);
+            Racer fox = new Racer(1);
+            runTheRace(will);
+            runTheRace(david);
+            runTheRace(fox);
+            
+   }  
+
+}	
+	
+     
